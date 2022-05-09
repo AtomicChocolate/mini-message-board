@@ -2,7 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-  main 
+  main
+    a(href="/new")= "Write a new message"
     each message in messages 
-      
+      section.message-card 
+        p.message-text= message.text 
+        footer
+          p.user= message.user
+          p.date= message.date

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= "New Message"
+  main
+    a(href="/")= "Cancel"
+    section.form 
+      form(method="POST" action="/new")
+        textarea(type="text" placeholder="Username" name="user" id="user")
+        input(name="text" placeholder="Your message here!" )
+        button(type="submit" id="submit-btn")= "Post"
