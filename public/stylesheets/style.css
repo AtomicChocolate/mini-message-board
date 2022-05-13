@@ -12,8 +12,29 @@ a {
 	border: solid 2px black;
 	border-radius: 5px;
 	margin: 5%;
+	padding: 1%;
 }
 
 .user {
+	display: inline;
+	background-color: #222;
+	color: lightgray;
+	border-radius: 5px;
+	padding: 2px 5px 2px 5px;
 	font-weight: bold;
+}
+
+/* .user::before {
+	font-weight: normal;
+	content: "[ ";
+}
+
+.user::after {
+	font-weight: normal;
+	content: " ]";
+} */
+
+form {
+	display: flex;
+	flex-direction: column;
 }

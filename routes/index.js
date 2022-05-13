@@ -5,12 +5,12 @@ const messages = [
 	{
 		text: "Hello!",
 		user: "jame",
-		date: new Date(),
+		date: new Date().toLocaleTimeString(),
 	},
 	{
 		text: "2nd message from me ;-)",
 		user: "jame",
-		date: new Date(),
+		date: new Date().toLocaleTimeString(),
 	},
 ];
 
@@ -23,7 +23,7 @@ router.post("/new", (req, res) => {
 	const newMessage = {
 		text: req.body.text,
 		user: req.body.user,
-		date: new Date(),
+		date: new Date().toLocaleTimeString(),
 	};
 	messages.unshift(newMessage);
 	res.redirect("/");
