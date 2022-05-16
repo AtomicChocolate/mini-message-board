@@ -6,7 +6,7 @@ A very simple message board, all done server-side using Express. View messages, 
 
 I probably should have spent more time improving the CSS, but whatever.
 
-## [Live Demo](https://blooming-peak-00160.herokuapp.com//)
+## [Live Demo](https://blooming-peak-00160.herokuapp.com)
 
 ### Made with
 
